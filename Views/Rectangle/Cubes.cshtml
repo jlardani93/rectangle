@@ -1,0 +1,10 @@
+<h1> Here are some cubes you have unintentionally created </h1>
+<ul>
+@foreach(var cube in Model)
+{
+    <li><a href="/Cube/@cube.GetId()">Click here to see Cube @cube.GetId()</a></li>
+}
+</ul>
+
+<p><a href="/">Make a new rectangle</a></p>
+<p><a href="/Cube/ClearCube">Clear cube list</a></p>
